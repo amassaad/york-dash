@@ -10,7 +10,7 @@ class Fitbit
     conf = { 
               oauth: 
                 {
-                  consumer_key: ENV["FIT_CONSUMER_KEY"],
+                  consumer_key: ENV['FIT_CONSUMER_KEY'],
                   consumer_secret: ENV['FIT_CONSUMER_SECRET'],
                   secret: ENV['FIT_SECRET'],
                   token: ENV['FIT_TOKEN'],
