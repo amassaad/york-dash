@@ -10,12 +10,11 @@ class Fitbit
     conf = { 
               oauth: 
                 {
-                  consumer_key: ENV['FIT_CONSUMER_KEY'],
-                  consumer_secret: ENV['FIT_CONSUMER_SECRET'],
+                  consumer_key: => ENV['FIT_CONSUMER_KEY'],
+                  consumer_secret: => ENV['FIT_CONSUMER_SECRET'],
                   secret: ENV['FIT_SECRET'],
                   token: ENV['FIT_TOKEN'],
                   user_id: ENV['FIT_USER_ID']}}
-    puts conf
     @config  = Fitgem::Client.symbolize_keys conf
     @client  = Fitgem::Client.new config[:oauth].merge!(options)
   end
