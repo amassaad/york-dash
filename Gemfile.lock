@@ -1,10 +1,8 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.3.5)
     atomic (1.1.14)
     backports (3.6.0)
-    buftok (0.2.0)
     coffee-script (2.2.0)
       coffee-script-source
       execjs
@@ -21,21 +19,15 @@ GEM
       sprockets
       thin
       thor
-    equalizer (0.0.9)
     eventmachine (1.0.3)
     execjs (2.0.2)
-    faraday (0.9.0)
-      multipart-post (>= 1.2, < 3)
+    fitgem (0.9.0)
+      oauth
+    haml (4.0.5)
+      tilt
     hike (1.2.3)
-    http (0.5.0)
-      http_parser.rb
-    http_parser.rb (0.6.0)
-    json (1.8.1)
-    memoizable (0.4.0)
-      thread_safe (~> 0.1.3)
     multi_json (1.8.4)
-    multipart-post (2.0.0)
-    naught (1.0.0)
+    oauth (0.4.7)
     rack (1.5.2)
     rack-protection (1.5.2)
       rack
@@ -44,7 +36,6 @@ GEM
     rufus-scheduler (2.0.24)
       tzinfo (>= 0.3.22)
     sass (3.2.14)
-    simple_oauth (0.2.0)
     sinatra (1.4.4)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -69,17 +60,6 @@ GEM
     thread_safe (0.1.3)
       atomic
     tilt (1.4.1)
-    twitter (5.7.1)
-      addressable (~> 2.3)
-      buftok (~> 0.2.0)
-      equalizer (~> 0.0.9)
-      faraday (~> 0.9.0)
-      http (~> 0.5.0)
-      http_parser.rb (~> 0.6.0)
-      json (~> 1.8)
-      memoizable (~> 0.4.0)
-      naught (~> 1.0)
-      simple_oauth (~> 0.2.0)
     tzinfo (1.1.0)
       thread_safe (~> 0.1)
 
@@ -88,4 +68,6 @@ PLATFORMS
 
 DEPENDENCIES
   dashing
-  twitter (>= 5.0.0)
+  fitgem
+  haml
+  sass

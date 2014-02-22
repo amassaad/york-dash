@@ -1,4 +1,5 @@
 require 'dashing'
+require 'haml'
 
 configure do
   set :auth_token, 'YOUR_AUTH_TOKEN'
@@ -7,6 +8,8 @@ configure do
     def protected!
      # Put any authentication code you want in here.
      # This method is run before accessing any resource.
+
+     
     end
   end
 end
