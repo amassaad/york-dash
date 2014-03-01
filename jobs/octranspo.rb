@@ -2,7 +2,7 @@ require 'octranspo_fetch'
  
 APPLICATION_ID = ENV['OC_ID']
 APPLICATION_KEY = ENV['OC_KEY']
-MAX_RESULTS = 8
+MAX_RESULTS = 12
 STOPS = {
     "3009" => {description: "Rideau Street"},
     "3000" => {description: "Rideau Center (bridge)"}
