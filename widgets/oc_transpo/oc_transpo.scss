@@ -1,0 +1,90 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:  #A2211F;
+ 
+$title-color:        rgba(255, 255, 255, 0.7);
+$moreinfo-color:     rgba(255, 255, 255, 0.7);
+$live-color:         rgba(255, 255, 255, 0.7);
+$unlive-color:       rgba(255, 255, 255, 0.4);
+$bus-type-color:     rgba(0,0,0, 0.7);
+$live-value-color:   #fff;
+$unlive-value-color: rgba(255, 255, 255, 0.7);
+ 
+ 
+// ----------------------------------------------------------------------------
+// Widget-list styles
+// ----------------------------------------------------------------------------
+.widget-oc-transpo {
+ 
+  background-color: $background-color;
+  vertical-align: top;
+ 
+  .title {
+    color: $title-color;
+  }
+ 
+  ul {
+    margin: 0 15px;
+    text-align: left;
+    color: $live-color;
+  }
+ 
+  ol {
+    list-style-position: inside;
+  }
+ 
+  li {
+    margin-bottom: 5px;
+    white-space: nowrap;
+  }
+ 
+  .label {
+  }
+ 
+  .trip[data-live="false"] .label {
+    color: $unlive-color;
+  }
+ 
+  .trip[data-live="true"] .label {
+    color: $live-color;
+  }
+ 
+  .dest:before {
+    content: "To: ";
+  }
+ 
+  .busInfo {
+    color: $bus-type-color;
+    font-size: 60%;
+    display: block;
+  }
+ 
+  .list-nostyle {
+    list-style: none;
+  }
+ 
+  .value {
+    float: right;
+    margin-left: 12px;
+    font-weight: 600;
+    overflow: hidden;
+  }
+ 
+  .trip[data-live="true"] .value {
+    color: $live-value-color;
+  }
+ 
+  .trip[data-live="false"] .value {
+    color: $unlive-value-color;
+  }
+ 
+  .updated-at {
+    color: rgba(0, 0, 0, 0.3);
+  }
+ 
+  .more-info {
+    color: $moreinfo-color;
+  }
+ 
+}

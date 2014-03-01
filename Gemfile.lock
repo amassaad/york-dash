@@ -26,13 +26,24 @@ GEM
     haml (4.0.5)
       tilt
     hike (1.2.3)
+    lru_redux (0.8.1)
+    mime-types (2.1)
+    mini_portile (0.5.2)
     multi_json (1.8.4)
+    nokogiri (1.6.1)
+      mini_portile (~> 0.5.0)
     oauth (0.4.7)
+    octranspo_fetch (0.0.4)
+      lru_redux (>= 0.8.1)
+      nokogiri (>= 1.5.10)
+      rest-client (>= 1.6.7)
     rack (1.5.2)
     rack-protection (1.5.2)
       rack
     rack-test (0.6.2)
       rack (>= 1.0)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
     rufus-scheduler (2.0.24)
       tzinfo (>= 0.3.22)
     sass (3.2.14)
@@ -47,6 +58,8 @@ GEM
       rack-test
       sinatra (~> 1.4.0)
       tilt (~> 1.3)
+    sinatra_cyclist (0.0.3)
+      sinatra
     sprockets (2.10.1)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -70,4 +83,6 @@ DEPENDENCIES
   dashing
   fitgem
   haml
+  octranspo_fetch (>= 0.0.4)
   sass
+  sinatra_cyclist
