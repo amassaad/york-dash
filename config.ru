@@ -13,6 +13,10 @@ configure do
   end
 end
 
+configure :production do
+  require 'newrelic_rpm'
+end
+
 map Sinatra::Application.assets_prefix do
   run Sinatra::Application.sprockets
 end
