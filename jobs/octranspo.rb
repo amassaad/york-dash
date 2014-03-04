@@ -4,8 +4,8 @@ APPLICATION_ID = ENV['OC_ID']
 APPLICATION_KEY = ENV['OC_KEY']
 MAX_RESULTS = 12
 STOPS = {
-    "3009" => {description: "Rideau Street"},
-    "3000" => {description: "Rideau Center (bridge)"}
+    "3009" => {description: "Rideau Street", buses: [1,4,7,95,97]},
+    "3000" => {description: "Rideau Center (bridge)", buses: [8, 95, 97]}
 }
  
  
