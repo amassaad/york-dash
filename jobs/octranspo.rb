@@ -11,7 +11,7 @@ STOPS = {
  
 oct = OCTranspo.new({application_id: APPLICATION_ID, application_key: APPLICATION_KEY})
  
-SCHEDULER.every '2m', :first_in => 0 do
+SCHEDULER.every '1m', :first_in => 0 do
     # Get data for each stop
     no_data = []
     trips = []

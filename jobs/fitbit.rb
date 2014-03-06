@@ -4,7 +4,7 @@ unit_system   = "METRIC"
 date_format   = "%H:%M"
 animate_views = false
 
-SCHEDULER.every "10m", first_in: 0 do |job|
+SCHEDULER.every "20m", first_in: 0 do |job|
   fitbit = Fitbit.new unit_system: unit_system, date_format: date_format
   if fitbit.errors?
     send_event "fitbit", { error: fitbit.error }
