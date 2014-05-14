@@ -6,6 +6,7 @@ require 'haml'
 
 configure do
   set :auth_token, 'YOUR_AUTH_TOKEN'
+  set :default_dashboard, 'index'
 
   helpers do
 
@@ -23,7 +24,7 @@ configure do
   post '/auth/g/callback' do
     if auth = request.env['omniauth.auth'] 
       session[:user_id] = auth['info']['email']
-      redirect '/dash_1'
+      redirect '/'
     else
       redirect '/auth/failure'
     end
