@@ -23,7 +23,7 @@ configure do
   post '/auth/g/callback' do
     if auth = request.env['omniauth.auth'] 
       session[:user_id] = auth['info']['email']
-      redirect '/'
+      redirect '/dash_1'
     else
       redirect '/auth/failure'
     end
