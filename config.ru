@@ -17,7 +17,7 @@ configure do
 
   use Rack::Session::Cookie
   use OmniAuth::Builder do
-    provider :google_apps, :store => OpenID::Store::Filesystem.new('./tmp'), :name => 'g', :domain => 'atam.ca
+    provider :google_apps, :store => OpenID::Store::Filesystem.new('./tmp'), :name => 'g', :domain => 'atam.ca'
   end
 
   post '/auth/g/callback' do
