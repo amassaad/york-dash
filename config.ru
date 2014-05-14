@@ -1,5 +1,3 @@
-require 'openid/store/filesystem'
-require 'omniauth/strategies/google_apps'
 require "sinatra/cyclist"
 require 'dashing'
 require 'haml'
@@ -9,29 +7,10 @@ configure do
   set :default_dashboard, 'index'
 
   helpers do
-
     def protected!
-      redirect '/auth/g' unless session[:user_id]
+     # Put any authentication code you want in here.
+     # This method is run before accessing any resource.
     end
-
-  end
-
-  use Rack::Session::Cookie
-  use OmniAuth::Builder do
-    provider :google_apps, :store => OpenID::Store::Filesystem.new('./tmp'), :name => 'g', :domain => 'atam.ca'
-  end
-
-  post '/auth/g/callback' do
-    if auth = request.env['omniauth.auth'] 
-      session[:user_id] = auth['info']['email']
-      redirect '/'
-    else
-      redirect '/auth/failure'
-    end
-  end
-
-  get '/auth/failure' do
-    'Nope.'
   end
 end
 
