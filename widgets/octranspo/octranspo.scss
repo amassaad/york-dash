@@ -15,10 +15,16 @@ $unlive-value-color: rgba(255, 255, 255, 0.7);
 // ----------------------------------------------------------------------------
 // Widget-list styles
 // ----------------------------------------------------------------------------
+
+
+
+
+
 .widget-octranspo {
  
   background-color: $background-color;
   vertical-align: top;
+  width: 730px;
  
   .title {
     color: $title-color;
