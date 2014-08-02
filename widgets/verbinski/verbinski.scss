@@ -20,13 +20,15 @@ $cold1: #2F74FF; // 5 to 9
 $cool2: #25D6A4; // 10 to 14
 $cool1: #B9CC5A; // 15 to 19
 $warm: #ff9d37;// 20 to 24
-$hot: #ff5131; // 25 and above 
+$hot: #FF4136; // 25 and above 
  
  
 // ----------------------------------------------------------------------------
 // Widget-verbinski styles
 // ----------------------------------------------------------------------------
 .widget-verbinski {
+
+  position: relative;
  
   .cold5 { background-color: $cold5; } 
   .cold4 { background-color: $cold4; }
@@ -42,9 +44,10 @@ $hot: #ff5131; // 25 and above
     float: left;
     width: 33%;
     height: 350px;
+
  
     .column-inner {
-      padding: 20px 30px;
+      // padding: 20px 30px;
  
       .title { 
         color: $light-colour; 

@@ -1,10 +1,12 @@
 <script type='text/javascript'>
 $(function() {
-Dashing.gridsterLayout('[{"col":1,"row":1,"size_x":1,"size_y":2},{"col":4,"row":1,"size_x":1,"size_y":1},{"col":5,"row":1,"size_x":1,"size_y":2},{"col":2,"row":1,"size_x":2,"size_y":1},{"col":2,"row":2,"size_x":3,"size_y":1}]')
+Dashing.gridsterLayout('[{"col":1,"row":1,"size_x":1,"size_y":2},{"col":1,"row":3,"size_x":1,"size_y":1},{"col":5,"row":1,"size_x":1,"size_y":2},{"col":2,"row":1,"size_x":3,"size_y":1},{"col":2,"row":2,"size_x":3,"size_y":1},{"col":2,"row":3,"size_x":1,"size_y":1}]')
 });
   Dashing.widget_base_dimensions = [370, 340]
   Dashing.numColumns = 5
 </script>
+
+
 
 <% content_for :title do %>York Dash<% end %>
 <div class="gridster">
@@ -15,7 +17,7 @@ Dashing.gridsterLayout('[{"col":1,"row":1,"size_x":1,"size_y":2},{"col":4,"row":
     </li>
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-view="Countdown" data-title="Victoria's Birthday" data-end="27-September-2014 14:00:00"></div>
+      <div data-view="Countdown" data-title="Victoria's 007 Party" data-end="27-September-2014 14:00:00"></div>
     </li>
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="2">
@@ -24,12 +26,17 @@ Dashing.gridsterLayout('[{"col":1,"row":1,"size_x":1,"size_y":2},{"col":4,"row":
       <i class="icon-road icon-background"></i>
     </li>
 
-    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+    <li data-row="1" data-col="1" data-sizex="3" data-sizey="1">
       <div data-id="kwh_value" data-view="Graph" data-title="Power Cost ( $ per day )" style="background-color:#ff9618"></div>
     </li>
 
     <li data-row="1" data-col="1" data-sizex="3" data-sizey="1">
       <div data-id="verbinski" data-view="Verbinski"></div>      
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-view="Clock"></div>    
+      <i class="icon-time icon-background"></i>  
     </li>
     
    </ul>
