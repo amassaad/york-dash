@@ -1,4 +1,3 @@
-require "sinatra/cyclist"
 require 'dashing'
 require 'haml'
 
@@ -21,7 +20,5 @@ end
 map Sinatra::Application.assets_prefix do
   run Sinatra::Application.sprockets
 end
-
-set :routes_to_cycle_through, [:dash_1, :dash_2]
 
 run Sinatra::Application
