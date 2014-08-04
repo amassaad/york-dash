@@ -19,7 +19,7 @@ $cold2: #2863DB; // 0 to 4
 $cold1: #2F74FF; // 5 to 9
 $cool2: #25D6A4; // 10 to 14
 $cool1: #B9CC5A; // 15 to 19
-$warm: #ff9d37;// 20 to 24
+$warm: #FF851B;// 20 to 24
 $hot: #FF4136; // 25 and above 
  
  
@@ -43,11 +43,10 @@ $hot: #FF4136; // 25 and above
   #right-now, #today, #this-week {
     float: left;
     width: 33%;
-    height: 350px;
+    height: 340px;
 
  
     .column-inner {
-      // padding: 20px 30px;
  
       .title { 
         color: $light-colour; 
