@@ -97,4 +97,4 @@ class Dashing.Fitbit extends Dashing.Widget
     $(@node).find("#error")
 
   animationLength: ->
-    1000
+    5000
