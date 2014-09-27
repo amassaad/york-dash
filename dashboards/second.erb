@@ -1,0 +1,76 @@
+<script type='text/javascript'>
+$(function() {
+Dashing.gridsterLayout('[{"col":1,"row":1,"size_x":1,"size_y":1},{"col":3,"row":2,"size_x":2,"size_y":1},{"col":5,"row":1,"size_x":1,"size_y":2},{"col":1,"row":3,"size_x":3,"size_y":1},{"col":1,"row":2,"size_x":1,"size_y":1},{"col":1,"row":4,"size_x":1,"size_y":1},{"col":4,"row":1,"size_x":1,"size_y":1},{"col":3,"row":1,"size_x":1,"size_y":1}]')
+});
+
+
+  Dashing.widget_base_dimensions = [370, 330]
+  Dashing.numColumns = 5
+</script>
+
+
+
+<% content_for :title do %>York Dash<% end %>
+<div class="gridster">
+  <ul>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="fitbit" data-view="Fitbit"></div>
+    </li>
+
+<!--     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-view="Countdown" data-title="Victoria's 007 Party" data-end="27-September-2014 14:00:00"></div>
+    </li> -->
+
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="twitter_mentions" data-view="Comments" data-moreinfo="Tweets tagged with #victoria007"></div>
+      <i class="icon-twitter icon-background"></i>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="2">
+      <div data-id="octranspo" data-view="Octranspo" data-title="OC Transpo Live"
+      ></div>
+      <i class="icon-road icon-background"></i>
+    </li>
+<!-- 
+    <li data-row="1" data-col="1" data-sizex="3" data-sizey="1">
+      <div data-id="kwh_value" data-view="Rickshawgraph" data-stroke="true" data-default-alpha="0.5" data-title="Power Cost ( $ per day )"</div>
+    </li> -->
+
+<!--     <div data-id="convergence" data-view="Rickshawgraph" data-title="Convergence" data-unstack="true" data-stroke="true" data-default-alpha="0.5" data-color-scheme="compliment" data-legend="true" data-summary-method="last"></div> -->
+    
+<!-- 
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="debt" data-view="Rickshawgraph" data-title="( last 12 months )" data-unstack="true" data-stroke="true" data-default-alpha="0.5" data-color-scheme="compliment" data-legend="true" data-summary-method="sumLast"</div>
+    </li> -->
+
+    <li data-row="1" data-col="1" data-sizex="3" data-sizey="1">
+      <div data-id="verbinski" data-view="Verbinski"></div>      
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-view="Clock"></div>    
+      <i class="icon-time icon-background"></i>  
+    </li>
+    
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="iframe1" data-view="iframe">
+        
+      </div>    
+    </li>
+
+  <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+    <div data-id="aww" data-view="RandomAww"></div>
+  </li>
+
+
+  <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+    <div data-id="cats" data-view="RandomCats"></div>
+  </li>
+
+  </ul>
+</div>
+
+<div data-id="reload" data-view="Reload" data-title="Reload" style="display: none"></div>
+    <!-- <center><div style="font-size: 8px">Currently status positive. (+)</div></center> -->
+</div>
