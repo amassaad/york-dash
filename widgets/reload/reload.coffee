@@ -1,6 +1,6 @@
 class Dashing.Reload extends Dashing.Widget
 
-  minsToReload = 90
+  minsToReload = 40
   countdown = 0
 
   ready: ->
