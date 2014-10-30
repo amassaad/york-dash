@@ -3,7 +3,7 @@ ruby '2.1.2'
 
 gem 'dashing',                    '>= 1.3.4'
 gem 'fitgem',                     '0.10.0'
-# gem 'haml'
+gem 'haml'
 gem "sass", :require => 'sass'
 gem 'octranspo_fetch',            '>= 0.0.4'
 gem 'twitter',                     '>= 5.11.0'
