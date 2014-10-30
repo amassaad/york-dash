@@ -1,7 +1,7 @@
 require 'net/http'
 require 'json'
 
-SCHEDULER.every '30s', first_in: 0 do |job|
+SCHEDULER.every '10s', first_in: 0 do |job|
 
   url = "http://media.gallery.ca/newcam.jpg"
   # resp = Net::HTTP.get_response(URI.parse(url))
