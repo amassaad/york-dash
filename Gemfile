@@ -7,6 +7,7 @@ gem 'haml',                       '4.0.5'
 gem "sass", :require => 'sass'
 gem 'octranspo_fetch',            '0.0.4'
 gem 'twitter',                     '5.11.0'
+gem 'foscam-ruby',    :git => 'git@github.com:ATAMProductions/foscam-ruby.git'
 
 group :production do
 	gem 'newrelic_rpm',              '3.9.6.257'
