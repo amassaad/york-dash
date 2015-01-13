@@ -16,9 +16,7 @@
       .goal(data-bind="steps.goal | append '% of goal'")
       .bar(data-bind-data-bar-width="steps.goal")
 
-    %li(class="steps_total")
-      .value(data-bind="steps.total | shortenedNumber")
-      .label lifetime steps
+
 
     %li(data-bind-class="calories.intensity_class | prepend 'calories '")
       %input(class="meter" data-bind-value="calories.meter")
@@ -45,6 +43,10 @@
         %span(data-bind="distance.unit" class="unit")
 
       .label lifetime distance
+
+    %li(class="steps_total")
+      .value(data-bind="steps.total | shortenedNumber")
+      .label lifetime steps
 
     %li(data-bind-class="active.intensity_class | prepend 'active '")
       %input(class="meter" data-bind-value="active.meter")

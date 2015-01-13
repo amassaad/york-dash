@@ -43,6 +43,8 @@ class Fitbit
     calories.merge meter: meter(calories[:goal]), intensity_class: intensity_class(calories[:goal])
   end
 
+
+
   def distance
     distance = {
       today: distance_today,
