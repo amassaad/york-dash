@@ -1,0 +1,56 @@
+<script type='text/javascript'>
+
+  Dashing.widget_base_dimensions = [370, 330]
+  Dashing.numColumns = 5
+</script>
+
+<% content_for :title do %>York Dash<% end %>
+<div class="gridster">
+  <ul>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="fitbit" data-view="Fitbit"></div>
+    </li>
+<!-- 
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="octranspo" data-view="Octranspo" data-title="OC Transpo Live"
+      ></div>
+      <i class="icon-road icon-background"></i>
+    </li> -->
+
+    <li data-row="1" data-col="2" data-sizex="3" data-sizey="1">
+      <div data-id="kwh_value" data-view="Rickshawgraph" data-stroke="true" data-default-alpha="0.75" data-title="Power Cost ( $ per day )"</div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-view="Clock"></div>    
+      <i class="icon-time icon-background"></i>  
+    </li>
+    
+    <li data-row="1" data-col="2" data-sizex="2" data-sizey="2">
+        <img src="http://alex:testing@10.0.1.40/videostream.cgi" alt="york">
+
+    </li>
+
+    <li data-row="2" data-col="4" data-sizex="1" data-sizey="1">
+      <div data-id="aww" data-view="RandomAww"></div>
+    </li>
+
+    <li data-row="2" data-col="3" data-sizex="1" data-sizey="1">
+      <div data-id="cats" data-view="RandomCats"></div>
+    </li>
+
+    <li data-row="2" data-col="5" data-sizex="1" data-sizey="1">
+     <div data-view="Countdown" data-title="First Day of Spring" data-end="20-March-2014 01:00:00"></div>
+   </li>
+
+    <li data-row="3" data-col="3" data-sizex="3" data-sizey="1">
+      <div data-id="verbinski" data-view="Verbinski"></div>      
+    </li>
+
+  </ul>
+</div>
+
+<div data-id="reload" data-view="Reload" data-title="Reload" style="display: none"></div>
+</div>
+

@@ -1,29 +1,11 @@
 // ----------------------------------------------------------------------------
 // Sass declarations
 // ----------------------------------------------------------------------------
-$background-color:  #FF851B;
- 
+$background-color:  #9c9c9c;
+
 // ----------------------------------------------------------------------------
-// Widget-clock styles
+// Widget-reload styles
 // ----------------------------------------------------------------------------
-.widget-countdown {
- 
+.widget-reload {
   background-color: $background-color;
- 
-  h2 { font-size: 2em;}
- 
-  h1 { font-size: 2em;}
- 
-  .countdown-time {
-    margin-top: 10px;
-    color: white;
-  }
- 
-  .before-more-info {
-    font-size: 15px;
-    position: absolute;
-    bottom: 52px;
-    left: 0;
-    right: 0;
-  }
 }

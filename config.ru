@@ -1,14 +1,21 @@
-require "sinatra/cyclist"
 require 'dashing'
 require 'haml'
 
 configure do
   set :auth_token, 'YOUR_AUTH_TOKEN'
+  set :default_dashboard, 'index'
 
   helpers do
     def protected!
-     # Put any authentication code you want in here.
-     # This method is run before accessing any resource.
+      unless authorized?
+        response['WWW-Authenticate'] = %(Basic realm="Restricted Area")
+        throw(:halt, [401, "No authorized\n"])
+      end
+    end
+
+    def authorized?
+      @auth ||=  Rack::Auth::Basic::Request.new(request.env)
+      @auth.provided? && @auth.basic? && @auth.credentials && @auth.credentials == ['ieee1394', 'tripping-meme']
     end
   end
 end
@@ -20,7 +27,5 @@ end
 map Sinatra::Application.assets_prefix do
   run Sinatra::Application.sprockets
 end
-
-set :routes_to_cycle_through, [:dash_1, :dash_2]
 
 run Sinatra::Application

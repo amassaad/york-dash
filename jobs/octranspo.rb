@@ -2,16 +2,16 @@ require 'octranspo_fetch'
  
 APPLICATION_ID = ENV['OC_ID']
 APPLICATION_KEY = ENV['OC_KEY']
-MAX_RESULTS = 12
+MAX_RESULTS = 4
 STOPS = {
-    "3009" => {description: "Rideau Street", buses: [1,4,7,95,97]},
+    "3009" => {description: "Rideau Street", buses: [1,95,97]},
     "3000" => {description: "Rideau Center (bridge)", buses: [8, 95, 97]}
 }
  
  
 oct = OCTranspo.new({application_id: APPLICATION_ID, application_key: APPLICATION_KEY})
  
-SCHEDULER.every '1m', :first_in => 0 do
+SCHEDULER.every '2m', :first_in => 0 do
     # Get data for each stop
     no_data = []
     trips = []

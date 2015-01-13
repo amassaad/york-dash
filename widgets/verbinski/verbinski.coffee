@@ -65,7 +65,8 @@ class Dashing.Verbinski extends Dashing.Widget
       5: [10..14]
       6: [15..19]
       7: [20..24]
-      8: 25
+      8: [25..29]
+      9: 30
  
     weather = "#4b4b4b"
     switch
@@ -77,7 +78,8 @@ class Dashing.Verbinski extends Dashing.Widget
       when temp in range[5] then weather = 'cool2'
       when temp in range[6] then weather = 'cool1'
       when temp in range[7] then weather = 'warm'
-      when temp >= range[8] then weather = 'hot'
+      when temp in range[8] then weather = 'hot'
+      when temp >= range[9] then weather = 'hottest'
     weather
  
   getTime: (now = new Date()) ->
