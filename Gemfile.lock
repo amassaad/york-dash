@@ -1,8 +1,8 @@
 GIT
   remote: git@github.com:ATAMProductions/foscam-ruby.git
-  revision: f023223037719cb8d661b6434bd007da4dd93380
+  revision: 9e051236cfcaef8c523d8f3b1db924287cbb9148
   specs:
-    foscam-ruby (0.1.1)
+    foscam-ruby (0.1.1c)
       activemodel
       activesupport
       faraday
