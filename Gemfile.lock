@@ -1,30 +1,7 @@
-GIT
-  remote: git@github.com:ATAMProductions/foscam-ruby.git
-  revision: 9e051236cfcaef8c523d8f3b1db924287cbb9148
-  specs:
-    foscam-ruby (0.1.1c)
-      activemodel
-      activesupport
-      faraday
-      mini_magick
-      tzinfo
-
 GEM
   remote: https://rubygems.org/
   specs:
-    activemodel (4.2.0)
-      activesupport (= 4.2.0)
-      builder (~> 3.1)
-    activesupport (4.2.0)
-      i18n (~> 0.7)
-      json (~> 1.7, >= 1.7.7)
-      minitest (~> 5.1)
-      thread_safe (~> 0.3, >= 0.3.4)
-      tzinfo (~> 1.1)
-    addressable (2.3.6)
     backports (3.6.4)
-    buftok (0.2.0)
-    builder (3.2.2)
     coffee-script (2.2.0)
       coffee-script-source
       execjs
@@ -42,31 +19,17 @@ GEM
       sprockets (~> 2.10.1)
       thin (~> 1.6.1)
       thor (~> 0.18.1)
-    equalizer (0.0.9)
     eventmachine (1.0.4)
     execjs (2.0.2)
-    faraday (0.9.1)
-      multipart-post (>= 1.2, < 3)
     fitgem (0.10.0)
       oauth
     haml (4.0.5)
       tilt
     hike (1.2.3)
-    http (0.6.3)
-      http_parser.rb (~> 0.6.0)
-    http_parser.rb (0.6.0)
-    i18n (0.7.0)
-    json (1.8.2)
     lru_redux (0.8.1)
-    memoizable (0.4.2)
-      thread_safe (~> 0.3, >= 0.3.1)
     mime-types (2.4.3)
-    mini_magick (4.0.2)
     mini_portile (0.6.2)
-    minitest (5.5.1)
     multi_json (1.10.1)
-    multipart-post (2.0.0)
-    naught (1.0.0)
     netrc (0.10.2)
     newrelic_rpm (3.9.6.257)
     nokogiri (1.6.5)
@@ -92,7 +55,6 @@ GEM
     rufus-scheduler (2.0.24)
       tzinfo (>= 0.3.22)
     sass (3.2.19)
-    simple_oauth (0.2.0)
     sinatra (1.4.5)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -116,17 +78,6 @@ GEM
     thor (0.18.1)
     thread_safe (0.3.4)
     tilt (1.4.1)
-    twitter (5.11.0)
-      addressable (~> 2.3)
-      buftok (~> 0.2.0)
-      equalizer (~> 0.0.9)
-      faraday (~> 0.9.0)
-      http (~> 0.6.0)
-      http_parser.rb (~> 0.6.0)
-      json (~> 1.8)
-      memoizable (~> 0.4.0)
-      naught (~> 1.0)
-      simple_oauth (~> 0.2.0)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
 
@@ -136,10 +87,8 @@ PLATFORMS
 DEPENDENCIES
   dashing (= 1.3.4)
   fitgem (= 0.10.0)
-  foscam-ruby!
   haml (= 4.0.5)
   newrelic_rpm (= 3.9.6.257)
   octranspo_fetch (= 0.0.4)
   passenger (= 4.0.53)
   sass
-  twitter (= 5.11.0)
