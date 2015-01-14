@@ -1,1 +1,0 @@
-Check out YorkDash.herokuapp.com for the live demo
