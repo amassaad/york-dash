@@ -11,9 +11,3 @@ group :production do
 	gem 'newrelic_rpm',              '3.9.6.257'
 	gem 'passenger',                 '4.0.53'
 end
-
-group :development, :test do
-  gem 'rspec-rails',     '~> 3.1.0'
-  gem 'rack'          
-  gem 'rack-test'  
-end
