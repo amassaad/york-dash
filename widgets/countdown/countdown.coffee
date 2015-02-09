@@ -1,15 +1,13 @@
 class Dashing.Countdown extends Dashing.Widget
- 
+
   ready: ->
     setInterval(@startCountdown, 500)
- 
+
   startCountdown: =>
     current_timestamp = Math.round(new Date().getTime()/1000)
     end_timestamp = Math.round( Date.parse($(@node).find(".more-info").html())/1000 )
     seconds_until_end = end_timestamp - current_timestamp
-    if seconds_until_end < 3600
-      $(@node).parent().remove()
-    else if seconds_until_end < 0
+    if seconds_until_end < 0
       @set('timeleft', "TIME UP!")
       for i in [0..100] by 1
         $(@node).fadeTo('fast', 0).fadeTo('fast', 1.0)
@@ -25,7 +23,7 @@ class Dashing.Countdown extends Dashing.Widget
         @set('timeleft', d + " "+dayname+" " + @formatTime(h) + ":" + @formatTime(m) + ":" + @formatTime(s))
       else
         @set('timeleft', @formatTime(h) + ":" + @formatTime(m) + ":" + @formatTime(s))
- 
- 
+
+
   formatTime: (i) ->
     if i < 10 then "0" + i else i
