@@ -9,6 +9,4 @@ SCHEDULER.every '19s', first_in: 0 do |job|
   send_event('gallery', image: "background-image:url(#{url})")
   sleep(1.0/2.0)
   send_event('gallery', image: "background-image:url(#{url})")
-      puts "#{Time.now.getlocal("-05:00")}"
-
 end

@@ -36,7 +36,7 @@ SCHEDULER.every '2m', :first_in => 0 do |job|
 
   currently = forecast["currently"]
   current = {
-    temperature: currently["temperature"].round,
+    temperature: currently["apparentTemperature"].round,
     summary: currently["summary"],
     humidity: "#{(currently["humidity"] * 100).round}&#37;",
     wind_speed: currently["windSpeed"].round,
@@ -47,8 +47,8 @@ SCHEDULER.every '2m', :first_in => 0 do |job|
   daily = forecast["daily"]["data"][0]
   today = {
     summary: forecast["hourly"]["summary"],
-    high: daily["temperatureMax"].round,
-    low: daily["temperatureMin"].round,
+    high: daily["apparentTemperatureMax"].round,
+    low: daily["apparentTemperatureMin"].round,
     sunrise: time_to_str_minutes(daily["sunriseTime"]),
     sunset: time_to_str_minutes(daily["sunsetTime"]),
     icon: daily["icon"]
@@ -58,8 +58,8 @@ SCHEDULER.every '2m', :first_in => 0 do |job|
   for day in (1..7)
     day = forecast["daily"]["data"][day]
     this_day = {
-      max_temp: day["temperatureMax"].round,
-      min_temp: day["temperatureMin"].round,
+      max_temp: day["apparentTemperatureMax"].round,
+      min_temp: day["apparentTemperatureMin"].round,
       time: day_to_str(day["time"]),
       icon: day["icon"]
     }
