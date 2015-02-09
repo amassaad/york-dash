@@ -6,6 +6,7 @@ gem 'fitgem',                     '0.10.0'
 gem 'haml',                       '4.0.5'
 gem "sass", :require => 'sass'
 gem 'octranspo_fetch',            '0.0.4'
+# gem 'minty', :git => 'git@github.com:mattdbridges/minty.git'
 
 group :production do
 	gem 'newrelic_rpm',              '3.9.6.257'
