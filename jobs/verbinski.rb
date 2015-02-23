@@ -27,7 +27,7 @@ def day_to_str(time_obj)
   return Time.at(time_obj).strftime "%a"
 end
 
-SCHEDULER.every '2m', :first_in => 0 do |job|
+SCHEDULER.every '6m', :first_in => 0 do |job|
   http = Net::HTTP.new("api.forecast.io", 443)
   http.use_ssl = true
   http.verify_mode = OpenSSL::SSL::VERIFY_PEER
