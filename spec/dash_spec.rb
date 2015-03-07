@@ -9,7 +9,6 @@ require 'sinatra'
 describe 'Dash main page' do
   include Rack::Test::Methods
 
-
   def app
     Sinatra::Application
   end
@@ -17,12 +16,46 @@ describe 'Dash main page' do
   it "should load the index page" do
     get '/index'
     expect(last_response).to be_ok
-    # expect(last_response.body).to contain()
   end
 
   it "should have the cats RandomAww" do
     get '/index'
     expect(last_response.body).to include('RandomAww')
+  end
+
+  it "should have the cats RandomCats" do
+    get '/index'
+    expect(last_response.body).to include('RandomCats')
+  end
+  it "should have the Fitbit widget" do
+    get '/index'
+    expect(last_response.body).to include('Fitbit')
+  end
+
+  it "should have the Power widget" do
+    get '/index'
+    expect(last_response.body).to include('Rickshawgraph')
+    expect(last_response.body).to include('Power Cost')
+  end
+
+  it "should have the Clock" do
+    get '/index'
+    expect(last_response.body).to include('Clock')
+  end
+
+  it "should have the Countdown widget" do
+    get '/index'
+    expect(last_response.body).to include('Countdown')
+  end
+
+  it "should have the Vervinski weather widget" do
+    get '/index'
+    expect(last_response.body).to include('Verbinski')
+  end
+
+  it "should have the Reload widget" do
+    get '/index'
+    expect(last_response.body).to include('Reload')
   end
 
   it "should load the second page" do
