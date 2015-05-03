@@ -28,16 +28,20 @@
     </li>
 
     <% if Time.now.getlocal("-05:00").hour.between?(7, 16) %>
-      <li data-row="1" data-col="1" data-sizex="2" data-sizey="2">
-        <div data-id="gallery" data-view="NationalGallery"></div>
+      <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+        <div data-id="cam1" data-view="Webcam"></div>
       </li>
-
+      <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+        <div data-id="cam2" data-view="Webcam"></div>
+      </li>
     <% else %>
-    <li data-row="1" data-col="2" data-sizex="2" data-sizey="2">
-        <img src="http://alex:testing@10.0.1.40/videostream.cgi" style='width:100%;' border="0" alt="york">
-    </li>
+      <li data-row="1" data-col="2" data-sizex="1" data-sizey="1">
+          <img src="http://alex:testing@10.0.1.40/videostream.cgi" style='width:100%;' border="0" alt="york">
+      </li>
+      <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+        <div data-id="cam2" data-view="Webcam"></div>
+      </li>
     <% end %>
-
     <li data-row="2" data-col="4" data-sizex="1" data-sizey="1">
       <div data-id="aww" data-view="RandomAww"></div>
     </li>
