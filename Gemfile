@@ -7,8 +7,12 @@ gem 'haml',                       '4.0.5'
 gem "sass", :require => 'sass'
 gem 'octranspo_fetch',            '0.0.4'
 
+gem 'roo',                        '1.13.2'
+gem 'google_drive',               '0.3.10'
+gem 'google-spreadsheet-ruby',    '0.3.1'
+
 group :production do
-	gem 'newrelic_rpm',              '3.9.6.257'
+	gem 'newrelic_rpm',             '3.9.6.257'
 end
 
 group :development, :test do
