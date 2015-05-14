@@ -5,6 +5,10 @@ configure do
   set :auth_token, 'YOUR_AUTH_TOKEN'
   set :default_dashboard, 'index'
 
+end
+
+configure :production do
+  require 'newrelic_rpm'
   helpers do
     def protected!
       unless authorized?
@@ -18,10 +22,6 @@ configure do
       @auth.provided? && @auth.basic? && @auth.credentials && @auth.credentials == ['ieee1394', 'tripping-meme']
     end
   end
-end
-
-configure :production do
-  require 'newrelic_rpm'
 end
 
 map Sinatra::Application.assets_prefix do
