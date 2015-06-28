@@ -7,10 +7,9 @@ gem 'haml',                       '4.0.5'
 gem "sass", :require => 'sass'
 gem 'octranspo_fetch',            '0.0.4'
 
-gem 'roo',                        '1.13.2'
-gem 'google_drive',               '0.3.10'
-gem 'google-spreadsheet-ruby',    '0.3.1'
-
+gem 'google_drive',               '1.0.1'
+gem 'google-api-client',          '0.8.6'
+gem 'omniauth-google-oauth2'
 group :production do
 	gem 'newrelic_rpm',             '3.9.6.257'
 end
