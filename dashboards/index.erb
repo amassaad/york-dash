@@ -1,7 +1,11 @@
 <script type='text/javascript'>
+$(function() {
+Dashing.gridsterLayout('[{"col":1,"row":1,"size_x":1,"size_y":1},{"col":2,"row":1,"size_x":3,"size_y":1},{"col":5,"row":1,"size_x":1,"size_y":1},{"col":1,"row":2,"size_x":1,"size_y":1},{"col":2,"row":2,"size_x":1,"size_y":1},{"col":1,"row":3,"size_x":1,"size_y":1},{"col":2,"row":3,"size_x":1,"size_y":1},{"col":4,"row":2,"size_x":1,"size_y":1},{"col":3,"row":2,"size_x":1,"size_y":1},{"col":5,"row":2,"size_x":1,"size_y":1},{"col":3,"row":3,"size_x":3,"size_y":1}]')
+});
 
   Dashing.widget_base_dimensions = [370, 330]
   Dashing.numColumns = 5
+
 </script>
 
 
@@ -35,12 +39,24 @@
       <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
         <div data-id="cam2" data-view="Webcam"></div>
       </li>
+      <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+        <div data-id="cam3" data-view="Webcam"></div>
+      </li>
+      <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+        <div data-id="cam4" data-view="Webcam"></div>
+      </li>
     <% else %>
       <li data-row="1" data-col="2" data-sizex="1" data-sizey="1">
           <img src="http://alex:testing@10.0.1.40/videostream.cgi" style='width:100%;' border="0" alt="york">
       </li>
       <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
         <div data-id="cam2" data-view="Webcam"></div>
+      </li>
+      <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+        <div data-id="cam3" data-view="Webcam"></div>
+      </li>
+      <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+        <div data-id="cam4" data-view="Webcam"></div>
       </li>
     <% end %>
     <li data-row="2" data-col="4" data-sizex="1" data-sizey="1">
