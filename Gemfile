@@ -11,6 +11,7 @@ gem 'google_drive',               '1.0.1'
 gem 'google-api-client',          '0.8.6'
 gem 'omniauth-google-oauth2'
 gem 'httparty'
+gem 'mechanize'
 
 group :production do
 	gem 'newrelic_rpm',             '3.9.6.257'
