@@ -11,7 +11,6 @@ url3 = "http://traffic.ottawa.ca/map/camera?id=35"
 #I am the camera at Rideau and Sussex
 url4 = "http://traffic.ottawa.ca/map/camera?id=33"
 
-
 SCHEDULER.every '45s', first_in: 0 do |job|
   #We need to trick the browser into loading an erronious fake URL first to create the low fps "video" effect.
   send_event('cam1', image: "background-image:url(#{fake_url})")
