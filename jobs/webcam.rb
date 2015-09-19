@@ -13,9 +13,9 @@ require 'mechanize'
 #I am the camera at Rideau and Sussex
 @url4 = "http://traffic.ottawa.ca/map/camera?id=33"
 
-  @a = Mechanize.new 
-  #get cookie
-  @a.get(@first_url)
+@a = Mechanize.new 
+#get cookie
+@a.get(@first_url)
 
 SCHEDULER.every '2s', first_in: 0 do |job|
   get_camera(@url1, 'cam1')
