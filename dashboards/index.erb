@@ -32,7 +32,7 @@ Dashing.gridsterLayout('[{"col":1,"row":1,"size_x":1,"size_y":1},{"col":2,"row":
       <i class="icon-time icon-background"></i>
     </li>
 
-     if Time.now.getlocal("-05:00").hour.between?(7, 16) %>
+     <% if Time.now.getlocal("-05:00").hour.between?(7, 16) %>
 
       <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
         <div data-id="cam1" data-view="Webcam"></div>
@@ -47,7 +47,7 @@ Dashing.gridsterLayout('[{"col":1,"row":1,"size_x":1,"size_y":1},{"col":2,"row":
         <div data-id="cam4" data-view="Webcam"></div>
       </li>
 
-     else %>
+     <% else %>
 
 <!--       <li data-row="1" data-col="2" data-sizex="1" data-sizey="1">
           <img src="http://alex:testing@10.0.1.40/videostream.cgi" style='width:100%;' border="0" alt="york">
@@ -62,7 +62,7 @@ Dashing.gridsterLayout('[{"col":1,"row":1,"size_x":1,"size_y":1},{"col":2,"row":
         <div data-id="cam4" data-view="Webcam"></div>
       </li> -->
       
-     end %>
+     <% end %>
 
     <li data-row="2" data-col="4" data-sizex="1" data-sizey="1">
       <div data-id="aww" data-view="RandomAww"></div>
