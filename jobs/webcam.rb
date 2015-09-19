@@ -22,6 +22,7 @@ SCHEDULER.every '2s', first_in: 0 do |job|
   get_camera(@url2, 'cam2')
   get_camera(@url3, 'cam3')
   get_camera(@url4, 'cam4')
+  # Increment a counter.
 end
 
 def get_camera(url, cam)

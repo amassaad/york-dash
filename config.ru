@@ -1,6 +1,13 @@
 require 'dashing'
 require 'haml'
 
+
+# Load the dogstats module.
+require 'statsd'
+
+# Create a stats instance.
+statsd = Statsd.new('localhost', 8125)
+
 configure do
   set :auth_token, 'YOUR_AUTH_TOKEN'
   set :default_dashboard, 'index'
@@ -22,6 +29,8 @@ configure :production do
       @auth.provided? && @auth.basic? && @auth.credentials && @auth.credentials == ['ieee1394', 'tripping-meme']
     end
   end
+
+
 end
 
 map Sinatra::Application.assets_prefix do
