@@ -16,7 +16,7 @@ require 'mechanize'
 @a = Mechanize.new 
 @a.get(@first_url)
 
-SCHEDULER.every '5s', first_in: 0 do |job|
+SCHEDULER.every '10s', first_in: 0 do |job|
   get_camera(@url1, 'cam1')
   get_camera(@url2, 'cam2')
   get_camera(@url3, 'cam3')
@@ -28,7 +28,7 @@ def get_camera(url, cam)
   send_img("#{cam}-tmp1.jpg", cam)
   sleep(15.0/30.0)
   File.delete("public/#{cam}-tmp1.jpg")
-  sleep(2)
+  sleep(5)
   @a.get(url).save "public/#{cam}-tmp2.jpg"
   send_img("#{cam}-tmp2.jpg", cam)
   sleep(15.0/30.0)
