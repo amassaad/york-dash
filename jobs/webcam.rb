@@ -26,12 +26,11 @@ end
 def get_camera(url, cam)
   @a.get(url).save "public/#{cam}-tmp1.jpg"
   send_img("#{cam}-tmp1.jpg", cam)
-  sleep(15.0/30.0)
+  sleep(3)
   File.delete("public/#{cam}-tmp1.jpg")
-  sleep(5)
   @a.get(url).save "public/#{cam}-tmp2.jpg"
   send_img("#{cam}-tmp2.jpg", cam)
-  sleep(15.0/30.0)
+  sleep(3)
   File.delete("public/#{cam}-tmp2.jpg")
 end
 
