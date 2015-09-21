@@ -60,4 +60,5 @@ end
 
 File.open("public/hydro.json","w") do |f|
   f.write(data.to_json)
+  puts "Done writing hydro data to_json."
 end
