@@ -1,4 +1,5 @@
-  <div id="right-now" data-bind-class="right_now">
+<div id="each-widget">
+<div id="right-now" data-bind-class="right_now" class="cool1">
   <div class="column-inner column-left">
     <h3 class="title">Feels like</h3>
     <h2 class="temp" data-bind="current.temperature | append '&deg;' | raw"></h2>
@@ -24,7 +25,7 @@
   </div>
 </div>
 
-<div id="today" data-bind-class="today_bg">
+<div id="today" data-bind-class="today_bg" class="cool1">
   <div class="column-inner column-middle">
     <h3 class="title">Today will feel like</h3>
 
@@ -58,11 +59,9 @@
       <span data-bind="last_updated"></span>
     </p>
   </div>
-
 </div>
 
-
-<div id="this-week" data-bind-class="this_week_bg">
+<div id="this-week" data-bind-class="this_week_bg" class="cool1">
   <div class="column-inner column-right">
     <h3 class="title">This week</h3>
     <div class="upcoming-week">
@@ -74,4 +73,5 @@
       </p>
     </div>
   </div>
+</div>
 </div>

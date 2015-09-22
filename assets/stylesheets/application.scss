@@ -44,9 +44,9 @@ html {
 body {
   margin: 0;
   background-color: $background-color;
-  font-size: 20px;
+  font-size: 18px;
   color: $text-color;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 b, strong {
@@ -94,7 +94,7 @@ h1, h2, h3, h4, h5, p {
 h1 {
   margin-bottom: 12px;
   text-align: center;
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 400;
 }
 h2 {
@@ -144,6 +144,7 @@ h3 {
 
 .widget {
   text-align: center;
+  border-radius: 15px;
   width: 100%;
   display: table-cell;
   vertical-align: middle;

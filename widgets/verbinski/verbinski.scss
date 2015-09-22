@@ -44,13 +44,16 @@ $hottest: #DDDDDD; // 29 and up
   .hottest { background-color: $hottest; }
 
   #right-now, #today, #this-week {
-    float: left;
-    width: 33%;
-    height: 340px;
-  padding-top: 15px;
+    float: right;
+    width: 31%;
+    height: 320px;
+    border-radius: 15px;
+
+    margin:0 20px 0 0;
 
     .column-inner {
 
+    padding: 20px 10px;
       .title {
         color: $light-colour;
         text-transform: uppercase;
@@ -117,4 +120,8 @@ $hottest: #DDDDDD; // 29 and up
       }
     }
   }
+}
+
+#each-widget {
+
 }
