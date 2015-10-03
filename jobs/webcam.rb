@@ -18,9 +18,13 @@ require 'mechanize'
 
 SCHEDULER.every '5s', first_in: 0 do |job|
   t1 = Thread.new{get_camera(@url1, 'cam1')}
+  sleep(1/3)
   t2 = Thread.new{get_camera(@url2, 'cam2')}
+  sleep(1/3)
   t3 = Thread.new{get_camera(@url3, 'cam3')}
+  sleep(1/3)
   t4 = Thread.new{get_camera(@url4, 'cam4')}
+  sleep(1/3)
 end
 
 def get_camera(url, cam)
