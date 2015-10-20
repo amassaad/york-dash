@@ -16,7 +16,7 @@ require 'mechanize'
 @a = Mechanize.new
 @a.get(@first_url)
 
-SCHEDULER.every '12s', first_in: 0 do |job|
+SCHEDULER.every '8s', first_in: 0 do |job|
   t1 = Thread.new{get_camera(@url1, 'cam1')}
   t2 = Thread.new{get_camera(@url2, 'cam2')}
   t3 = Thread.new{get_camera(@url3, 'cam3')}
