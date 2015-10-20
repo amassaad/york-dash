@@ -18,24 +18,20 @@ require 'mechanize'
 
 SCHEDULER.every '12s', first_in: 0 do |job|
   t1 = Thread.new{get_camera(@url1, 'cam1')}
-  sleep(1/3)
   t2 = Thread.new{get_camera(@url2, 'cam2')}
-  sleep(1/3)
   t3 = Thread.new{get_camera(@url3, 'cam3')}
-  sleep(1/3)
   t4 = Thread.new{get_camera(@url4, 'cam4')}
-  sleep(1/3)
 end
 
 def get_camera(url, cam)
   @a.get(url).save "public/#{cam}-tmp1.jpg"
-  sleep(2)
+  sleep(1)
   send_img("#{cam}-tmp1.jpg", cam)
-  sleep(2)
+  sleep(1)
   @a.get(url).save "public/#{cam}-tmp2.jpg"
-  sleep(2)
+  sleep(1)
   send_img("#{cam}-tmp2.jpg", cam)
-  sleep(2)
+  sleep(1)
   File.delete("public/#{cam}-tmp1.jpg")
   File.delete("public/#{cam}-tmp2.jpg")
 end
