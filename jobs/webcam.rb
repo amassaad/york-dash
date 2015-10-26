@@ -36,12 +36,11 @@ def get_camera(url, cam)
   Thread.new do
     @a.get(url).save! "public/#{cam}-tmp1.jpg"
     @a.get(url).save! "public/#{cam}-tmp2.jpg"
-    sleep(1)
     send_img("#{cam}-tmp1.jpg", cam)
-    sleep(4)
-    send_img("#{cam}-tmp2.jpg", cam)
-    File.delete("public/#{cam}-tmp1.jpg")
     sleep(2)
+    send_img("#{cam}-tmp2.jpg", cam)
+    sleep(2)
+    File.delete("public/#{cam}-tmp1.jpg")
     File.delete("public/#{cam}-tmp2.jpg")
   end
 end
