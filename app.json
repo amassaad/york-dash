@@ -1,0 +1,15 @@
+{
+"name": "YorkDash",
+"description": "Dash",
+"keywords": [
+"Dashing",
+"Ruby",
+"York",
+""
+],
+"website": "https://github.com/amassaad/tripping-meme",
+"success_url": "/",
+"addons": [
+"papertrail"
+]
+}
