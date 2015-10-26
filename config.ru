@@ -5,7 +5,6 @@ configure do
   set :auth_token, 'YOUR_AUTH_TOKEN'
   set :default_dashboard, 'index'
   set :protection, :except => :frame_options
-  set :cache_enabled, false
 end
 
 configure :production do
