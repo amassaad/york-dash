@@ -18,10 +18,17 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);
 
   .title {
     color: $title-color;
+    font-size: 50px;
+    padding-bottom: 40px;
+  }
+
+  .type {
+    float: right;
+    padding-right: 15px;
   }
 
   ol, ul {
-    margin: 0 15px;
+    margin: 0 12px;
     text-align: left;
     color: $label-color;
   }
@@ -44,7 +51,7 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);
 
   .value {
     float: right;
-    margin-left: 12px;
+    margin-left: 8px;
     font-weight: 600;
     color: $value-color;
   }
