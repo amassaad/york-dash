@@ -1,6 +1,6 @@
 <script type='text/javascript'>
 $(function() {
-Dashing.gridsterLayout('[{"col":1,"row":1,"size_x":1,"size_y":1},{"col":2,"row":1,"size_x":3,"size_y":1},{"col":5,"row":1,"size_x":1,"size_y":1},{"col":1,"row":2,"size_x":1,"size_y":1},{"col":2,"row":2,"size_x":1,"size_y":1},{"col":1,"row":3,"size_x":1,"size_y":1},{"col":2,"row":3,"size_x":1,"size_y":1},{"col":4,"row":2,"size_x":1,"size_y":1},{"col":3,"row":2,"size_x":1,"size_y":1},{"col":5,"row":2,"size_x":1,"size_y":1},{"col":3,"row":3,"size_x":3,"size_y":1}]')
+Dashing.gridsterLayout('[{"col":1,"row":1,"size_x":1,"size_y":1},{"col":1,"row":2,"size_x":1,"size_y":2},{"col":3,"row":1,"size_x":3,"size_y":1},{"col":2,"row":1,"size_x":1,"size_y":1},{"col":2,"row":3,"size_x":1,"size_y":1},{"col":2,"row":2,"size_x":1,"size_y":1},{"col":3,"row":2,"size_x":1,"size_y":1},{"col":3,"row":3,"size_x":3,"size_y":1}]')
 });
 
   Dashing.widget_base_dimensions = [370, 330]
@@ -8,13 +8,17 @@ Dashing.gridsterLayout('[{"col":1,"row":1,"size_x":1,"size_y":1},{"col":2,"row":
 
 </script>
 
-
 <% content_for :title do %>York Dash<% end %>
 <div class="gridster">
   <ul>
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="fitbit" data-view="Fitbit"></div>
+    </li>
+
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="2">
+      <div data-id="transactions" data-view="List" data-unordered="true" data-title="Transactions" data-moreinfo=" Last 20 transactions"></div>
     </li>
 <!--
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
@@ -31,38 +35,6 @@ Dashing.gridsterLayout('[{"col":1,"row":1,"size_x":1,"size_y":1},{"col":2,"row":
       <div data-view="Clock"></div>
       <i class="icon-time icon-background"></i>
     </li>
-
-     <% if Time.now.getlocal("-05:00").hour.between?(7, 18) %>
-
-      <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-        <div data-id="cam1" style="background-image: url(cam1-tmp2.jpg)" data-view="Webcam"></div>
-      </li>
-      <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-        <div data-id="cam2" data-view="Webcam"></div>
-      </li>
-      <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-        <div data-id="cam3" data-view="Webcam"></div>
-      </li>
-      <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-        <div data-id="cam4" data-view="Webcam"></div>
-      </li>
-
-     <% else %>
-
-      <li data-row="1" data-col="2" data-sizex="1" data-sizey="1">
-          <img src="http://alex:testing@10.0.1.40/videostream.cgi" style='width:100%;' border="0" alt="york">
-      </li>
-      <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-        <div data-id="cam2" data-view="Webcam"></div>
-      </li>
-      <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-        <div data-id="cam1" data-view="Webcam"></div>
-      </li>
-      <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-        <div data-id="cam4" data-view="Webcam"></div>
-      </li>
-
-     <% end %>
 
     <li data-row="2" data-col="4" data-sizex="1" data-sizey="1">
       <div data-id="aww" data-view="RandomAww"></div>

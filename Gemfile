@@ -12,6 +12,7 @@ gem 'google-api-client',          '0.8.6'
 gem 'omniauth-google-oauth2'
 gem 'httparty'
 gem 'mechanize'
+gem 'minty', :git => "git@github.com:mattdbridges/minty.git"#, :ref => ''
 
 group :production do
 	gem 'newrelic_rpm',             '3.9.6.257'

@@ -30,14 +30,14 @@ Dashing.gridsterLayout('[{"col":1,"row":1,"size_x":1,"size_y":1},{"col":3,"row":
 
 
     <li data-row="1" data-col="1" data-sizex="3" data-sizey="1">
-      <div data-id="verbinski" data-view="Verbinski"></div>      
+      <div data-id="verbinski" data-view="Verbinski"></div>
     </li>
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-view="Clock"></div>    
-      <i class="icon-time icon-background"></i>  
+      <div data-view="Clock"></div>
+      <i class="icon-time icon-background"></i>
     </li>
-    
+
     <li data-row="1" data-col="1" data-sizex="2" data-sizey="2">
       <!-- <div data-id="iframe2" data-view="iframe"> -->
         <img src="http://alex:testing@10.0.1.40/videostream.cgi" alt="york">
@@ -46,8 +46,8 @@ Dashing.gridsterLayout('[{"col":1,"row":1,"size_x":1,"size_y":1},{"col":3,"row":
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="iframe1" data-view="iframe">
-        
-      </div>    
+
+      </div>
     </li>
 
   <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
@@ -58,6 +58,40 @@ Dashing.gridsterLayout('[{"col":1,"row":1,"size_x":1,"size_y":1},{"col":3,"row":
   <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
     <div data-id="cats" data-view="RandomCats"></div>
   </li>
+
+   <% if Time.now.getlocal("-05:00").hour.between?(7, 18) %>
+
+      <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+        <div data-id="cam1" style="background-image: url(cam1-tmp2.jpg)" data-view="Webcam"></div>
+      </li>
+      <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+        <div data-id="cam2" data-view="Webcam"></div>
+      </li>
+      <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+        <div data-id="cam3" data-view="Webcam"></div>
+      </li>
+      <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+        <div data-id="cam4" data-view="Webcam"></div>
+      </li>
+
+     <% else %>
+
+      <li data-row="1" data-col="2" data-sizex="1" data-sizey="1">
+          <img src="http://alex:testing@10.0.1.40/videostream.cgi" style='width:100%;' border="0" alt="york">
+      </li>
+      <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+        <div data-id="cam2" data-view="Webcam"></div>
+      </li>
+      <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+        <div data-id="cam1" data-view="Webcam"></div>
+      </li>
+      <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+        <div data-id="cam4" data-view="Webcam"></div>
+      </li>
+
+     <% end %>
+
+
 
   </ul>
 </div>
