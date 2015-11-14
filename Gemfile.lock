@@ -1,5 +1,5 @@
 GIT
-  remote: git@github.com:mattdbridges/minty.git
+  remote: git@github.com:amassaad/minty.git
   revision: d03ff7ee969a09137c736fbf291866b3dc2e352d
   specs:
     minty (0.1)
