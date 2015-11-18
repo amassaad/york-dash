@@ -39,16 +39,28 @@ SCHEDULER.every '90m', first_in: 0 do |job|
   t.refresh
 
   t.transactions.take(20).each do |t|
+    t.description.slice! "Tangerine "
+    t.description.slice! "Account "
+    t.description.slice! "- A New Hope"
+    t.description.slice! "- Rent Pool"
+    t.description.gsub!("Withdrawl", "WD")
+    t.description.gsub!("Transaction", "TX")
+    t.description.gsub!("Chequing", "Chq.")
+    t.description.gsub!("Savings", "Svgs.")
+
     tx << {
-    label: t.description,
+    label: t.description[0..20],
     value: dollars(t.amount),
     type: t.transaction_type
     }
   end
 
   accounts do |a|
+    a.name.gsub!("Chequing", "Chq.")
+    a.name.gsub!("Savings", "Svgs.")
+
     ac << {
-      label: a.name[0..16],
+      label: a.name[0..20],
       type: a.type.capitalize,
       value: dollars(a.value)
     }
