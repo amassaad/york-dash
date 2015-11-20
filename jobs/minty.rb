@@ -49,7 +49,7 @@ SCHEDULER.every '90m', first_in: 0 do |job|
     t.description.gsub!("Savings", "Svgs.")
 
     tx << {
-    label: t.description[0..20],
+    label: t.description[0..18],
     value: dollars(t.amount),
     type: t.transaction_type
     }
