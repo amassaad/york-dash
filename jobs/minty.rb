@@ -60,7 +60,7 @@ SCHEDULER.every '90m', first_in: 0 do |job|
     a.name.gsub!("Savings", "Svgs.")
 
     ac << {
-      label: a.name[0..20],
+      label: a.name[0..16],
       type: a.type.capitalize,
       value: dollars(a.value)
     }
