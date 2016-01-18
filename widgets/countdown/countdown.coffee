@@ -1,7 +1,7 @@
 class Dashing.Countdown extends Dashing.Widget
 
   ready: ->
-    setInterval(@startCountdown, 500)
+    setInterval(@startCountdown, 1500)
 
   startCountdown: =>
     current_timestamp = Math.round(new Date().getTime()/1000)
@@ -10,7 +10,7 @@ class Dashing.Countdown extends Dashing.Widget
     if seconds_until_end < 0
       @set('timeleft', "TIME UP!")
       for i in [0..100] by 1
-        $(@node).fadeTo('fast', 0).fadeTo('fast', 1.0)
+        $(@node).fadeTo('slow', 0).fadeTo('slow', 1.0)
     else
       d = Math.floor(seconds_until_end/86400)
       h = Math.floor((seconds_until_end-(d*86400))/3600)
