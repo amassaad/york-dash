@@ -98,10 +98,6 @@ $hottest: #DDDDDD; // 29 and up
           font-size: $info;
           margin: -5px 0;
 
-          .weather-icon-inline {
-            max-width: 50px;
-            margin: -5px;
-          }
           .weather-icon-inline.large {
             max-width: 60px;
             margin: -10px;
@@ -109,6 +105,11 @@ $hottest: #DDDDDD; // 29 and up
         }
       }
 
+       .weather-icon-inline {
+            max-width: 50px;
+            margin: -5px;
+            padding-left: 15px;
+          }
       .powered-by {
         margin-top: 14px;
         color: $light-colour;
