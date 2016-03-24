@@ -1,3 +1,3 @@
 #!/bin/sh
 bundle
-dashing server -p 5001
+dashing start -p 5001
