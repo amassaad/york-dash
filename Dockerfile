@@ -2,7 +2,7 @@ FROM ruby:2.3-alpine
 EXPOSE 5001
 
 
-ENV BUILD_PACKAGES bash curl-dev ruby-dev build-base
+ENV BUILD_PACKAGES bash curl-dev ruby-dev build-base git
 ENV RUBY_PACKAGES ruby ruby-io-console ruby-bundler
 
 # Update and install all of the required packages.
