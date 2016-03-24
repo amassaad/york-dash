@@ -4,3 +4,4 @@ history.yml
 /tmp
 client_secret.json
 get_hydro_bill.rb
+Gemfile.lock

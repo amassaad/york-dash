@@ -1,12 +1,11 @@
 source 'https://rubygems.org'
-ruby '2.2.4'
+ruby '2.3.0'
 
 gem 'dashing',                    '1.3.4'
 gem 'fitgem',                     '0.10.0'
 gem 'haml',                       '4.0.5'
 gem "sass", :require => 'sass'
 gem 'octranspo_fetch',            '0.0.4'
-
 
 gem 'httparty'
 gem 'mechanize'
