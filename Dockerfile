@@ -1,5 +1,5 @@
 # Base image
-FROM alpine:3.2
+FROM alpine:latest
 
 
 # Install PGsql dependencies and js engine
