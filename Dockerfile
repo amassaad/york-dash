@@ -27,4 +27,4 @@ WORKDIR /app
 EXPOSE 5001
 
 # Default command
-CMD ["dashing", "start", "-p", "5001"]
+CMD ["bundle", "exec", dashing", "start", "-p", "5001"]
