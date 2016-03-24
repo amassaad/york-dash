@@ -11,7 +11,6 @@ RUN apk update && \
     apk upgrade && \
     apk add $BUILD_PACKAGES && \
     apk add $RUBY_PACKAGES && \
-    gem install nokogiri --use-system-libraries && \
     rm -rf /var/cache/apk/*
 
 RUN mkdir /usr/app
@@ -19,7 +18,8 @@ WORKDIR /usr/app
 
 COPY Gemfile /usr/app/
 COPY Gemfile.lock /usr/app/
-RUN bundle install
+RUN bundle config build.nokogiri --use-system-libraries && \
+  bundle install
 
 COPY . /usr/app
 
