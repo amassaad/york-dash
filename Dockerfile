@@ -24,4 +24,4 @@ RUN bundle config build.nokogiri --use-system-libraries && \
 COPY . /usr/app
 
 # Default command
-CMD ["bash", "/usr/src/app/server.sh"]
+CMD ["bash", "/usr/app/server.sh"]
