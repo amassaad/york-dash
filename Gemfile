@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.2.3'
+ruby '2.2.4'
 
 gem 'dashing',                    '1.3.4'
 gem 'fitgem',                     '0.10.0'
