@@ -11,6 +11,7 @@ RUN apk update && \
     apk upgrade && \
     apk add $BUILD_PACKAGES && \
     apk add $RUBY_PACKAGES && \
+    gem install nokogiri --use-system-libraries && \
     rm -rf /var/cache/apk/*
 
 RUN mkdir /usr/app
