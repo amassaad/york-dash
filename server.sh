@@ -1,2 +1,2 @@
 #!/bin/sh
-dashing start -p 5001
+bundle exec dashing start -p 5001
