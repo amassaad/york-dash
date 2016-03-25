@@ -17,8 +17,11 @@ WORKDIR /usr/app
 
 COPY Gemfile /usr/app/
 COPY Gemfile.lock /usr/app/
+
+RUN gem install bundler
 RUN bundle config build.nokogiri --use-system-libraries && \
   bundle install
+
 
 COPY . /usr/app
 

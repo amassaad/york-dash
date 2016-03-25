@@ -1,6 +1,6 @@
 #!/bin/sh
 ruby -v
-which ruby
+which -a ruby
 bundle -v
 which bundle
 cat /usr/local/bin/bundle
