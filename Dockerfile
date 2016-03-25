@@ -1,8 +1,8 @@
 FROM ruby:2.3-alpine
 EXPOSE 5001
 
-ENV BUILD_PACKAGES bash curl-dev build-base git
-ENV RUBY_PACKAGES ruby-io-console ruby-bundler libxml2-dev libxslt-dev
+ENV BUILD_PACKAGES bash curl-dev build-base git nodejs
+ENV RUBY_PACKAGES libxml2-dev libxslt-dev
 
 # Update and install all of the required packages.
 # At the end, remove the apk cache
