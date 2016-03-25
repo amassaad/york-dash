@@ -10,6 +10,7 @@ gem 'octranspo_fetch',            '0.0.4'
 gem 'httparty'
 gem 'mechanize'
 gem 'minty', :github => "amassaad/minty"
+gem 'nokogiri', '~> 1.6', '>= 1.6.8.rc3'
 
 group :production do
 	gem 'newrelic_rpm',             '3.9.6.257'
