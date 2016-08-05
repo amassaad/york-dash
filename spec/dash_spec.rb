@@ -27,16 +27,6 @@ describe 'Dash main page' do
     get '/index'
     expect(last_response.body).to include('RandomCats')
   end
-  it "should have the Fitbit widget" do
-    get '/index'
-    expect(last_response.body).to include('Fitbit')
-  end
-
-  it "should have the Power widget" do
-    get '/index'
-    expect(last_response.body).to include('Rickshawgraph')
-    expect(last_response.body).to include('Power Cost')
-  end
 
   it "should have the Clock" do
     get '/index'
@@ -48,7 +38,7 @@ describe 'Dash main page' do
     expect(last_response.body).to include('Countdown')
   end
 
-  it "should have the Vervinski weather widget" do
+  it "should have the Verbinski weather widget" do
     get '/index'
     expect(last_response.body).to include('Verbinski')
   end
