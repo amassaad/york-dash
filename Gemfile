@@ -12,7 +12,7 @@ gem 'mechanize'
 gem 'minty', :github => "amassaad/minty"
 
 group :production do
-	gem 'newrelic_rpm',             '3.9.6.257'
+  gem 'newrelic_rpm'
 end
 
 group :development, :test do
