@@ -6,6 +6,7 @@ placeholder = '/assets/nyantocat.gif'
 SCHEDULER.every '7500s', first_in: 0 do |job|
   http = Net::HTTP.new('www.reddit.com')
   response = http.request(Net::HTTP::Get.new("/r/catsstandingup.json"))
+  puts response
   json = JSON.parse(response.body)
 
   if json['data']['children'].count <= 0
