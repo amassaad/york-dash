@@ -1,11 +1,10 @@
-require 'net/http'
+require 'httparty'
 require 'json'
 
 placeholder = '/assets/nyantocat.gif'
 
 SCHEDULER.every '90s', first_in: 0 do |job|
-  http = Net::HTTP.new('www.reddit.com')
-  response = http.request(Net::HTTP::Get.new("/r/cats/top.json"))
+  response = HTTParty.get('http://www.reddit.com/r/cats/top.json')
   json = JSON.parse(response.body)
 
   if json['data']['children'].count <= 0
