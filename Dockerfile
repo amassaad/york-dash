@@ -1,4 +1,4 @@
-FROM ruby:2.3-alpine
+FROM ruby:2.4.3-alpine
 EXPOSE 5001
 
 ENV BUILD_PACKAGES bash curl-dev build-base git nodejs
