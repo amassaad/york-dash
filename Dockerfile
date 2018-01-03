@@ -19,11 +19,9 @@ COPY Gemfile /usr/app/
 COPY Gemfile.lock /usr/app/
 
 RUN gem install bundler
-RUN bundle config build.nokogiri --use-system-libraries && \
-  bundle install
-
+RUN bundle install
 
 COPY . /usr/app
 
-# Default command
+# Default server command
 CMD ["bash", "/usr/app/server.sh"]
