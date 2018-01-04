@@ -10,3 +10,4 @@ group :production do
   gem 'newrelic_rpm'
 end
 
+gem 'tzinfo-data'
