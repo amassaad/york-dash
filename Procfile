@@ -1,1 +1,1 @@
-web: bundle exec dashing start -p $PORT
+web: bundle exec smashing start -p $PORT
