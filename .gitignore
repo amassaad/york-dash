@@ -5,3 +5,4 @@ history.yml
 client_secret.json
 get_hydro_bill.rb
 Gemfile.lock
+.env
