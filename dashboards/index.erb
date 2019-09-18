@@ -12,7 +12,7 @@ $(function() {
 <div class="gridster">
   <ul>
     <li data-row="1" data-col="1" data-sizex="2" data-sizey="2">
-      <img src="https://media.giphy.com/media/FqtWrearu5vb2/giphy.gif" style='width:100%;' border="0" alt="york">
+       <div data-id="iframeId1" data-view="Iframe" data-src="http://tv.giphy.com/"></div>
     </li>
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
@@ -29,7 +29,7 @@ $(function() {
     </li>
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-view="Countdown" data-title="Birthday" data-end="29-September-2018 00:15:00"></div>
+      <div data-view="Countdown" data-title="Birthday" data-end="29-September-<%= Time.new.year %> 00:15:00"></div>
     </li>
 
     <li data-row="3" data-col="3" data-sizex="3" data-sizey="1">
