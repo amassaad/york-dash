@@ -24,7 +24,7 @@ GEM
     multi_json (1.13.1)
     multi_xml (0.6.0)
     mustermann (1.0.3)
-    newrelic_rpm (6.6.0.358)
+    newrelic_rpm (6.8.0.360)
     rack (2.0.8)
     rack-protection (2.0.7)
       rack
