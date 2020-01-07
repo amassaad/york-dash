@@ -33,24 +33,13 @@ describe 'Dash main page' do
     expect(last_response.body).to include('Clock')
   end
 
-  it "should have the Countdown widget" do
-    get '/index'
-    expect(last_response.body).to include('Countdown')
-  end
-
   it "should have the Verbinski weather widget" do
     get '/index'
     expect(last_response.body).to include('Verbinski')
-  end
-
-  it "should have the Reload widget" do
-    get '/index'
-    expect(last_response.body).to include('Reload')
   end
 
   it "should load the second page" do
     get '/second'
     expect(last_response).to be_ok
   end
-
 end

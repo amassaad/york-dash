@@ -7,6 +7,7 @@ gem 'httparty'
 gem 'sass', require: 'sass'
 gem 'smashing'
 gem 'tzinfo-data'
+gem 'rspec'
 
 group :production do
   gem 'newrelic_rpm'
