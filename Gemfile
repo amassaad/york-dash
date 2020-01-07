@@ -8,6 +8,7 @@ gem 'sass', require: 'sass'
 gem 'smashing'
 gem 'tzinfo-data'
 gem 'rspec'
+gem 'rack'
 
 group :production do
   gem 'newrelic_rpm'

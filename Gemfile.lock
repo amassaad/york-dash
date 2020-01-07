@@ -90,6 +90,7 @@ DEPENDENCIES
   haml (= 5.0.0)
   httparty
   newrelic_rpm
+  rack
   rspec
   sass
   smashing
