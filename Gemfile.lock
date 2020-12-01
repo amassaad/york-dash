@@ -14,7 +14,7 @@ GEM
       tzinfo
     eventmachine (1.2.7)
     execjs (2.7.0)
-    haml (5.0.0)
+    haml (5.2.1)
       temple (>= 0.8.0)
       tilt
     httparty (0.17.3)
@@ -93,7 +93,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  haml (= 5.0.0)
+  haml (= 5.2.1)
   httparty
   newrelic_rpm
   rack
