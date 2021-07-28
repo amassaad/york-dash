@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.6.5'
 
-gem 'haml', '5.0.0'
+gem 'haml', '5.2.2'
 gem 'httparty'
 gem 'sass', require: 'sass'
 gem 'smashing'
